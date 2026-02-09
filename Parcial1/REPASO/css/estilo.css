@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(recursos/images.png) 300px 300px no-repeat center;
+
+}
+
+.cuadro{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: rgb(86, 9, 9);
+}

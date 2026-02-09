@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #c4e5f7;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background: rgb(31, 13, 100);
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+li{
+    font-size: 4vh;
+    color: white;
+}
+
+/**/
+
+header{
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+#nubes{
+    top: 0;
+    height: 60%;
+}
+
+#pasto{
+    width: 100%;
+    height: 80%;
+
+
+}
+
+#sol{
+    width: 15%;
+    height: auto;
+    bottom: 30%;
+}
+
+#pikachu{
+    width: 50%;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+#sylveon{
+    width: 30%;
+    left: 0%;
+    bottom: 0;
+    transition: bottom right .2 ease-in-out;
+}
+
+.titulo{
+    color: red;
+    font-size: 10vh;
+
+    position: absolute;
+    top: 25%;
+    right: 0;
+
+    transform: translateY("-50%");
+    
+    z-index: 100;
+    margin: 2vh;
+
+    text-shadow: 5px 0px 0px white;
+    transition: right .1s ease-in-out;
+}
+
+main{
+    height: 100vh;
+}
