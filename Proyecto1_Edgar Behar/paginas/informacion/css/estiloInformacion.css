@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor_principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 60px auto 60px;
+
+    grid-template-areas:
+        "encabezado"
+        "menu"
+        "contenido"
+        "pie";
+}
+
+.encabezado{ grid-area: encabezado; }
+.menu{ grid-area: menu; }
+.contenido{ grid-area: contenido; }
+.pie{ grid-area: pie; }
+
+.encabezado{
+    background: black;
+    padding: 20px;
+}
+
+.logo{
+    color: red;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.menu{
+    background: #111;
+    padding: 15px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo_info{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin-top: 40px;
+}
+
+.parallax_info{
+    background-image: url("../recursos/chris2.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion_info{
+    padding: 60px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pie{
+    background: black;
+    color: white;
+    text-align: center;
+}
