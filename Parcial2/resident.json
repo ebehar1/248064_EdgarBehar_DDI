@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "Leon S. Kennedy",
+        "tipo": "personaje",
+        "descripcion": "Agente experto en combate contra bioarmas.",
+        "imagen": "../assets/img/leon.webp"
+    },
+    {
+        "titulo": "Jill Valentine",
+        "tipo": "personaje",
+        "descripcion": "Miembro de S.T.A.R.S.",
+        "imagen": "../assets/img/jill.webp"
+    },
+    {
+        "titulo": "Raccoon City",
+        "tipo": "lugar",
+        "descripcion": "Ciudad destruida por el virus T.",
+        "imagen": "../assets/img/raccoon.webp"
+    },
+    {
+        "titulo": "Tyrant (Mr. X)",
+        "tipo": "enemigo",
+        "descripcion": "Bioarma extremadamente resistente.",
+        "imagen": "../assets/img/tyrant.webp"
+    },
+    {
+        "titulo": "Nemesis",
+        "tipo": "enemigo",
+        "descripcion": "Cazador de S.T.A.R.S.",
+        "imagen": "../assets/img/nemesis.webp"
+    },
+    {
+        "titulo": "Umbrella Corporation",
+        "tipo": "organizacion",
+        "descripcion": "Corporación responsable del virus.",
+        "imagen": "../assets/img/umbrella.webp"
+    }
+]

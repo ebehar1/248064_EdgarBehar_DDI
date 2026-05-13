@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Crear Cuenta</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre completo">
+    <input type="email" id="correo" placeholder="Correo">
+    <input type="password" id="password" placeholder="Contraseña">
+    <input type="password" id="confirmPassword" placeholder="Confirmar contraseña">
+
+    <label>Foto de perfil:</label>
+    <input type="file" id="foto" accept="image/*">
+
+    <label>Tipo de usuario:</label>
+    <select id="rol">
+        <option value="visitante">Visitante</option>
+        <option value="admin">Administrador</option>
+    </select>
+
+    <button id="btnRegistro">Crear cuenta</button>
+
+    <p>¿Ya tienes cuenta?</p>
+    <a href="../login/index.html">Volver al login</a>
+</div>
+
+<script src="../shared/storage.js"></script>
+<script src="registro.js"></script>
+
+</body>
+</html>

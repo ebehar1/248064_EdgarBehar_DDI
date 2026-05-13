@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Resident Evil</title>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+
+<header>
+    <h2>Wiki Resident Evil</h2>
+    <button class="cerrarSesion">Cerrar sesión</button>
+</header>
+
+<div class="perfil">
+    <img id="fotoPerfil" class="fotoPerfil">
+    <div>
+        <p id="nombreUsuario"></p>
+    </div>
+</div>
+
+<div id="contenido" class="grid"></div>
+
+<div id="modalPerfil" class="modal oculto">
+    <div class="modalContenido">
+        <h3>Editar perfil</h3>
+
+        <input type="text" id="nuevoNombre" placeholder="Nuevo nombre">
+        <input type="file" id="nuevaFoto" accept="image/*">
+
+        <button id="guardarPerfil">Guardar</button>
+        <button id="cancelarPerfil">Cancelar</button>
+    </div>
+</div>
+
+<script src="../shared/storage.js"></script>
+<script src="usuario.js"></script>
+
+</body>
+</html>

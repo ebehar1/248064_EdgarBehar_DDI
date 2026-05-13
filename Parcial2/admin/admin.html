@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header>
+    <h2>Panel Administrador</h2>
+    <button class="cerrarSesion">Cerrar sesión</button>
+</header>
+
+<div class="upload">
+    <h3>Subir archivo JSON</h3>
+    <input type="file" id="jsonFile" accept=".json">
+</div>
+
+<div id="vistaAdmin" class="grid"></div>
+
+<script src="../shared/storage.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
