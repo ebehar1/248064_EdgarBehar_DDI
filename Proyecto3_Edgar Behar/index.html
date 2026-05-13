@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paint</title>
+
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+
+    <!-- Herramientas -->
+    <div class="panel">
+
+        <h3>Herramientas</h3>
+
+        <button id="btnPincel">Pincel</button>
+        <button id="btnLinea">Línea</button>
+        <button id="btnCuadro">Cuadro</button>
+        <button id="btnCirculo">Círculo</button>
+        <button id="btnFigura">Figura</button>
+        <button id="btnSticker">Sticker</button>
+        <button id="btnBorrador">Borrador</button>
+
+        <h3>Imagen</h3>
+
+        <input 
+            type="file" 
+            id="inputImagen" 
+            accept="image/*"
+        >
+
+        <h3>Colores</h3>
+
+        <label for="colorLinea">
+            Color de línea
+        </label>
+
+        <input 
+            type="color" 
+            id="colorLinea" 
+            value="#000000"
+        >
+
+        <label for="colorRelleno">
+            Color de relleno
+        </label>
+
+        <input 
+            type="color" 
+            id="colorRelleno" 
+            value="#ff0000"
+        >
+
+        <h3>Grosor</h3>
+
+        <input 
+            type="range" 
+            id="grosor" 
+            min="1" 
+            max="20" 
+            value="5"
+        >
+
+        <!-- Filtros -->
+        <h3>Filtros</h3>
+
+        <button id="btnBN">
+            Blanco y negro
+        </button>
+
+        <button id="btnRojo">
+            Escala rojos
+        </button>
+
+        <button id="btnVerde">
+            Escala verdes
+        </button>
+
+        <button id="btnAzul">
+            Escala azul
+        </button>
+
+        <button id="btnSepia">
+            Sepia
+        </button>
+
+        <!-- Acciones -->
+        <h3>Acciones</h3>
+
+        <button id="btnLimpiar">
+            Limpiar
+        </button>
+
+        <button id="btnGuardar">
+            Guardar
+        </button>
+
+        <button id="btnDeshacer">
+            Deshacer
+        </button>
+
+        <button id="btnRehacer">
+            Rehacer
+        </button>
+
+    </div>
+
+    <!--Lienzo-->
+    <div class="contenedorCanvas">
+
+        <canvas 
+            id="lienzo" 
+            class="lienzo" 
+            width="1000" 
+            height="800">
+        </canvas>
+
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+
+</body>
+</html>
